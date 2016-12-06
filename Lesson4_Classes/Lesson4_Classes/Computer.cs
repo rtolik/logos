@@ -22,18 +22,18 @@ namespace Lesson4_Classes
 
         public Computer (string newModel=stModel,int newPrice=stPrice,double newCPU=stCPU,int newRAM=stRAM, bool newIsOn=stIsOn)
         {
-            newModel = model;
-            newPrice = price;
-            newCPU = cpu;
-            newRAM = stRAM;
-            newIsOn = isOn;
+            model=newModel;
+            price=newPrice;
+            cpu=newCPU;
+            ram=newRAM;
+            isOn=newIsOn;
         }
 
         public Computer(string nModel,double nCPU,int nRAM):this(nModel,stPrice,nCPU,nRAM,stIsOn) {}
 
         public void PrintInfo()
         {
-            Console.WriteLine(" Model: {0} \n Price: {1} \n CPU: {2}\n RAM: {3}\n Status: " , model,price,cpu,ram,isOn==true?"Is ON":"Is OFF" );
+            Console.WriteLine(" Model: {0} \n Price: {1} \n CPU: {2}\n RAM: {3}\n Status:{4} ", model, price, cpu, ram, isOn? "ON":"OFF");
         }
         public void TurnOn()
         {

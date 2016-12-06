@@ -12,8 +12,11 @@ namespace Lesson4_Classes
         {
             Computer myComputer = new Computer("Samsung rv 508",10500,2.3,3,false);
             myComputer.PrintInfo();
-
-
+           /* myComputer.TurnOn();
+            myComputer.PrintInfo();
+            myComputer.TurnOFF();
+            myComputer.PrintInfo();
+            */
         }
     }
 }
