@@ -1,0 +1,2 @@
+Hello, my new file
+Hi 2
